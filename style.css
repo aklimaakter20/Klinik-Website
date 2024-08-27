@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    overflow-x: hidden;
+}
 
 div{
     i{
@@ -143,14 +146,96 @@ a.nav-link {
 }
 /* service-section */
 .service-section{
-    .about-btn{
+   
+    .service-row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .service-col{
+            width: 25%;
+            
+        }
+       
+        i {
+            font-size: 20px;
+        }
+        & h2{
+            font-size: 22px;
+            font-weight: 700;
+            color: #1B2C51;
+        }
+      .btn-div .bi{
+        font-size: 26px;
+        transition: 0.5s;
+        
+      }
+      .btn{
+        opacity: 0;
+        transition: 0.5s;
+      }
+      .btn-div, .btn:hover{
+       opacity: 1;
+       color: #0463FA;
+        
+      }
+    }
+    .service-btn{
         margin: auto;
         display: block;
         margin-bottom: 20px;
     }
-    & h1{
-        color: #1B2C51;
-        font-weight: 700;
-        font-size: 35px;
+}
+/* feature-section */
+.feature-row{
+    height: 100vh;
+    overflow: hidden;
+    padding-top: 50px;
+}
+.feature-left{
+    padding-top: 80px;
+    padding-left: 80px;
+    background-color: #0463FA;
+    .about-btn{
+        background-color: #0463FA;
+        color: white;
+        border: 1px solid white;
     }
+    p{
+        margin-bottom: 50px;
+    }
+    .feature-divs{
+        align-items: center;
+
+        .feature-info{
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            .div-des span{
+                color: white;
+                font-size: 16px;
+                font-weight: 400;
+                margin-bottom: 10px;
+            }
+            & h6{
+                font-size: 20px;
+            }
+        }
+        .feature-info:nth-child(2){
+            margin-left: 200px;
+        }
+        .bi{
+            font-size: 18px;
+            padding: 5px;
+            color: #0463FA;
+            background-color:white;
+            border-radius: 50%;
+            margin-right: 30px;
+            
+        }
+        .feature-right img{
+            height: 100px;
+        }
+    }
+   
 }
