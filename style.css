@@ -142,3 +142,15 @@ a.nav-link {
     }
 }
 /* service-section */
+.service-section{
+    .about-btn{
+        margin: auto;
+        display: block;
+        margin-bottom: 20px;
+    }
+    & h1{
+        color: #1B2C51;
+        font-weight: 700;
+        font-size: 35px;
+    }
+}
